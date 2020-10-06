@@ -47,7 +47,7 @@ app.get('/getEvent', (req, res) => {
 
 
 
-her
+
  app.delete('/delete/:id', (req, res) => {
     events.deleteOne({_id: ObjectId(req.params.id)})
     .then( result => {
