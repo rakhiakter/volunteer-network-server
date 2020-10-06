@@ -44,6 +44,13 @@ app.get('/getEvent', (req, res) => {
         res.send(documents);
       });
   })
+   app.get("/getEvent", (req, res) => {
+    events
+      .find({  })
+      .toArray((err, documents) => {
+        res.send(documents);
+      });
+  })
 
 
 
